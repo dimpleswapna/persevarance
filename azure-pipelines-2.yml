@@ -3,7 +3,7 @@
 stages:
 - stage: BuildandPublishArtifact
   jobs:
-  - job: Maven-Build
+  - job: MavenBuild
     pool:
       name: pipeline agent
     steps:
