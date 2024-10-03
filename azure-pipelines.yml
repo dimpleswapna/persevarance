@@ -1,9 +1,9 @@
 trigger:
 - main
 stages:
-- stage: Build_and_Publish_Artifact
+- stage: BuildandPublishArtifact
   jobs:
-  - job: MavenBuild
+  - job: Maven-Build
     pool:
       name: Pipeline agent
     steps:
