@@ -1,5 +1,5 @@
-#trigger:
-#- main
+trigger:
+- main
 stages:
 - stage: Build_and_Publish_Artifact
   jobs:
