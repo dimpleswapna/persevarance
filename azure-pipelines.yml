@@ -1,5 +1,5 @@
-trigger:
-- main
+#trigger:
+#- main
 stages:
 - stage: BuildandPublishArtifact
   jobs:
@@ -7,7 +7,7 @@ stages:
     pool:
       name: Pipeline agent
     steps:
-    - task: Maven@4
+    - task: Maven@3
       inputs:
         mavenPomFile: 'pom.xml'
         goals: 'package'
@@ -16,8 +16,6 @@ stages:
         SourceFolder: '$(Build.SourcesDirectory)/target/'
         Contents: 'perseverance.war'
         TargetFolder: '$(Build.ArtifactStagingDirectory)/'
-
-
     - task: PublishBuildArtifacts@1
       inputs:
         PathtoPublish: '$(Build.ArtifactStagingDirectory)'
