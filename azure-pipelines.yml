@@ -7,7 +7,7 @@ stages:
     pool:
       name: Pipeline agent
     steps:
-    - task: Maven@3
+    - task: Maven@4
       inputs:
         mavenPomFile: 'pom.xml'
         goals: 'package'
