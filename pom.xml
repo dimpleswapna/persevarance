@@ -37,9 +37,8 @@
                     <webXml>src\main\webapp\WEB-INF\web.xml</webXml>
                 </configuration>
             </plugin>
-        </plugins>
+         </plugins>
       </build>
-    <defaultGoal>install</defaultGoal>
-  </build>
+   </build>
 </project>
 
